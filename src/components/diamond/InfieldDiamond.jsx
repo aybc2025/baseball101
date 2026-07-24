@@ -1,10 +1,15 @@
 // Renders on top of the field background in DiamondScreen. Uses the same
 // x/y percentage coordinate system as the fielder dots in data/positions.js
 // so everything lines up on one shared 0-100 grid.
+//
+// Sized so the rhombus actually contains all 6 infield positions (pitcher,
+// catcher, 1st/2nd/3rd base, shortstop) rather than just pitcher+catcher —
+// the outfield trio (left/center/right field, y 8-15) stays outside it,
+// which is correct: they play on the grass, not the dirt.
 const HOME = { x: 50, y: 88 }
-const FIRST = { x: 68, y: 66 }
-const SECOND = { x: 50, y: 44 }
-const THIRD = { x: 32, y: 66 }
+const FIRST = { x: 82, y: 50 }
+const SECOND = { x: 50, y: 12 }
+const THIRD = { x: 18, y: 50 }
 const BATTER = { x: 61, y: 83 }
 
 function BaseMarker({ x, y }) {

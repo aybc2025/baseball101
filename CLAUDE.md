@@ -109,7 +109,14 @@ App.jsx          the shell: header + active screen + bottom nav. Screen
   account, nothing to sync across devices. Explicit user decision.
 - **`InfieldDiamond.jsx` and `StrikeZoneExplainer.jsx`** were added after
   the initial build, on request, to the positions/field screen. The dirt
-  diamond uses an SVG with `preserveAspectRatio="none"` matching the field
+  diamond's four corners are sized so the rhombus actually contains all 6
+  infield fielder dots (pitcher, catcher, 1st/2nd/3rd base, shortstop) —
+  not just pitcher and catcher, which was the original, too-small version
+  — while the 3 outfielders stay clearly outside it. If `data/positions.js`
+  coordinates ever change, re-check inclusion: a point (x,y) is inside the
+  rhombus when `|x-50|/32 + |y-50|/38 <= 1` (center (50,50), half-widths
+  32/38 — see the HOME/FIRST/SECOND/THIRD constants at the top of the
+  file). The SVG uses `preserveAspectRatio="none"` matching the field
   box's existing % coordinate system, but the bases/home-plate/batter are
   plain HTML divs positioned by the same %, *not* inside that SVG — a true
   square rendered inside a non-uniformly-scaled viewBox comes out skewed,
