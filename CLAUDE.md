@@ -107,6 +107,19 @@ App.jsx          the shell: header + active screen + bottom nav. Screen
   original open question's phrasing.
 - **Progress/quiz score live only in `localStorage`** — no backend, no
   account, nothing to sync across devices. Explicit user decision.
+- **`InfieldDiamond.jsx` and `StrikeZoneExplainer.jsx`** were added after
+  the initial build, on request, to the positions/field screen. The dirt
+  diamond uses an SVG with `preserveAspectRatio="none"` matching the field
+  box's existing % coordinate system, but the bases/home-plate/batter are
+  plain HTML divs positioned by the same %, *not* inside that SVG — a true
+  square rendered inside a non-uniformly-scaled viewBox comes out skewed,
+  so anything that needs to stay a crisp shape lives outside it.
+  `StrikeZoneExplainer` is conceptually a rules concept (ball vs. strike)
+  but is shown on the positions screen because it reads naturally next to
+  the batter/home-plate visual — that's a placement choice, not a
+  statement that strike-zone content belongs to the "positions" module.
+  Its colors intentionally reuse `CountTracker.jsx`'s ball/strike palette
+  (green / clayLight) for visual consistency across screens.
 
 ## Commands reference
 
