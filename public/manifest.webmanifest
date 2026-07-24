@@ -2,8 +2,8 @@
   "name": "בייסבול 101 — Baseball 101",
   "short_name": "בייסבול 101",
   "description": "אפליקציה אינטראקטיבית שמלמדת יסודות בייסבול: עמדות, חוקים, לוח תוצאות וחידון.",
-  "start_url": "/baseball-101/",
-  "scope": "/baseball-101/",
+  "start_url": "/baseball101/",
+  "scope": "/baseball101/",
   "display": "standalone",
   "orientation": "portrait",
   "background_color": "#151f18",
@@ -12,19 +12,19 @@
   "lang": "he",
   "icons": [
     {
-      "src": "/baseball-101/icons/icon-192.png",
+      "src": "/baseball101/icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/baseball-101/icons/icon-512.png",
+      "src": "/baseball101/icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/baseball-101/icons/icon-maskable.png",
+      "src": "/baseball101/icons/icon-maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"

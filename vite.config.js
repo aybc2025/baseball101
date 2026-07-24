@@ -9,7 +9,7 @@ export default defineConfig({
   // IMPORTANT: base must match the GitHub repo name for GitHub Pages project
   // sites (https://<user>.github.io/<repo>/). Update this if the repo name
   // changes. See CLAUDE.md "Deployment model".
-  base: '/baseball-101/',
+  base: '/baseball101/',
   plugins: [
     react(),
     VitePWA({

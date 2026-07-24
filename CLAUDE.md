@@ -26,7 +26,7 @@ Likely first-run friction points, roughly in the order you'll hit them:
    is a virtual module supplied by `vite-plugin-pwa` at build/dev time — it
    won't resolve outside a Vite process (e.g. don't try to unit-test that
    file in isolation without mocking it).
-3. **`vite.config.js` sets `base: '/baseball-101/'`** for GitHub Pages project-site
+3. **`vite.config.js` sets `base: '/baseball101/'`** for GitHub Pages project-site
    routing. If the repo is renamed, update `base` here *and* the two
    `start_url` / `scope` / icon paths in `public/manifest.webmanifest` to match —
    they're not derived automatically from `base`.
