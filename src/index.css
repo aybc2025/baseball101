@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './styles/tokens.css';
+
+@layer base {
+  html, body, #root {
+    height: 100%;
+  }
+
+  /* Numbers (scores, counts, innings) always read left-to-right, even
+     inside an RTL Hebrew layout — isolate them so digits don't reorder. */
+  .ltr-nums {
+    direction: ltr;
+    unicode-bidi: isolate;
+  }
+
+  ::selection {
+    background: theme('colors.stitch');
+    color: theme('colors.chalk');
+  }
+}
+
+@layer utilities {
+  .safe-bottom {
+    padding-bottom: env(safe-area-inset-bottom, 0px);
+  }
+}

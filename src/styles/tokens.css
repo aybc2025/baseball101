@@ -1,0 +1,16 @@
+/* Mirrors tailwind.config.js theme.extend.colors — kept in sync manually.
+   Tailwind utility classes should be preferred everywhere; this file exists
+   for the rare spot (e.g. a dynamic inline gradient) that needs a raw hex. */
+:root {
+  --color-bg: #151f18;
+  --color-bg-alt: #0f1710;
+  --color-panel: #1f2c22;
+  --color-panel-2: #233527;
+  --color-clay: #b5642e;
+  --color-clay-light: #d98a52;
+  --color-stitch: #c8102e;
+  --color-chalk: #f4efe2;
+  --color-chalk-dim: #c9c4b6;
+  --color-grass-line: #3e6b47;
+  --color-navy: #0f1b2e;
+}
